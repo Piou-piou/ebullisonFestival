@@ -3,14 +3,32 @@
 	src: url(fonts/JosefinSans-Regular.ttf);
 }
 
+@font-face {
+	font-family: rabbit;
+	src: url(fonts/rabbit.ttf);
+}
+
+@font-face {
+	font-family: neuropol;
+	src: url(fonts/neuropol.ttf);
+}
+
+@font-face {
+	font-family: lachata;
+	src: url(fonts/la-chata-normal.ttf);
+}
+
 html, body {
 	height: 100%;
 	min-height: 100%;
 }
 
 body {
-	font-family: josefin;
+	font-family: lachata;
 }
+
+$color-pink: #e6007e;
+$color-orange: #e94f0e;
 
 
 $header-background: #ffffff;

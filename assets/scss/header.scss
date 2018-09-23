@@ -3,7 +3,7 @@ header {
 	width: 100%;
 	
 	@media screen and (max-width: 640px) {
-		img {
+		.accueil img {
 			display: block;
 			margin: 0 auto;
 		}
@@ -24,8 +24,23 @@ header {
 				list-style: none;
 				width: 30%;
 
+				img {
+					margin-right: 20px;
+				}
+
 				a {
 					color: $header-color;
+				}
+			}
+		}
+
+		@media screen and (max-width: 640px) {
+			ul {
+				padding-left: 20%;
+
+				li {
+					display: block;
+					width: 100%;
 				}
 			}
 		}
