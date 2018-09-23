@@ -1,0 +1,46 @@
+.video {
+	position: relative;
+	min-height: 100%;
+	width: 100%;
+	overflow: hidden;
+	
+	iframe {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+}
+
+.index {
+	h1, h3 {
+		text-align: center;
+		font-family: josefin;
+	}
+	
+	h1 {
+		font-weight: bold;
+	}
+	
+	h4 {
+		font-family: josefin;
+		margin: 20px 0;
+		
+		&:first-of-type {
+			margin-top: 100px;
+		}
+	}
+	
+	@media screen and (max-width: 640px) {
+		h4:first-of-type {
+			margin-top: inherit;
+		}
+	}
+	
+	&.intro {
+		padding: 50px 0;
+		
+		p {
+			text-align: center;
+		}
+	}
+}

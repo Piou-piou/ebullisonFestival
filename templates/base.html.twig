@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		
+		<title>{% block title %}Welcome!{% endblock %}</title>
+		{% block stylesheets %}
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/css/foundation-float.min.css" integrity="sha256-SXzNzz68b8cy/1oRvdP128/5VlvegrZO5QDmBiqhlQc= sha384-5EVTk1nWllg1T/XoVEd82fhnOxUhRUOquz4AyO3+M0kbhUzhruouReQWPnihRxPs sha512-y0IHToRgzE99SfoteKLXR0MUOTRPMQHwc4nmU2/Uqhu4KulOzK18RbuicuhlgzPDdj23skwxTWUv7CJs+psXig==" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+			<link rel="stylesheet" href="{{ asset('build/css/vendor.css') }}">
+			<link rel="stylesheet" href="{{ asset('build/css/style.css') }}">
+		{% endblock %}
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="row expanded">
+					<div class="small-12 medium-2 medium-offset-1 columns">
+						<a href="{{ path('index') }}" title="" class="accueil">
+							<img src="{{ asset('images/logo.png') }}" alt="">
+						</a>
+					</div>
+					<div class="small-12 medium-6 columns">
+						<ul>
+							<li><a href="#a-propos" title="A propos">A propos</a></li>
+							<li><a href="#contact" title="Contacttez nous">Contact</a></li>
+						</ul>
+					</div>
+					<div class="small-12 medium-2 columns end icones">
+						<div>
+							<a href="https://www.facebook.com/festivalebullison/" title="Facebook" target="_blank">
+								<i class="fab fa-facebook fa-"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		{% block body %}{% endblock %}
+		
+		
+		{% block javascripts %}
+			<script src="{{ asset('build/js/vendor.js') }}"></script>
+		{% endblock %}
+	</body>
+</html>
