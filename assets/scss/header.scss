@@ -1,11 +1,21 @@
 header {
 	background-color: $header-background;
 	width: 100%;
+	min-height: 100px;
 	
 	@media screen and (max-width: 640px) {
 		.accueil img {
 			display: block;
 			margin: 0 auto;
+		}
+	}
+
+	@media screen and (min-width: 1000px) {
+		nav {
+			position: fixed;
+			z-index: 999;
+			background-color: $header-background;
+			width: 100%;
 		}
 	}
 
