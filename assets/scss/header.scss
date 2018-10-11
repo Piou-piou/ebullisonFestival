@@ -2,6 +2,7 @@ header {
 	background-color: $header-background;
 	width: 100%;
 	min-height: 100px;
+	font-family: rabbit;
 	
 	@media screen and (max-width: 640px) {
 		.accueil img {
@@ -25,7 +26,7 @@ header {
 
 		ul {
 			line-height: 70px;
-			font-size: 20px;
+			font-size: 25px;
 			padding-left: 10%;
 			margin-bottom: 0;
 
@@ -35,11 +36,15 @@ header {
 				min-width: 30%;
 
 				img {
-					margin-right: 20px;
+					margin-right: 10px;
 				}
 
 				a {
 					color: $header-color;
+
+					&:hover {
+						color: $header-color;
+					}
 				}
 			}
 		}
@@ -67,7 +72,7 @@ header {
 			i {
 				display: inline-block;
 				line-height: 70px;
-				color: $header-color;
+				color: $header-facebook-color;
 				margin-right: 20px;
 				font-size: 40px;
 			}
