@@ -25,6 +25,8 @@ html, body {
 
 body {
 	font-family: lachata;
+	background: url("images/fond.png") no-repeat center top;
+	background-attachment: fixed;
 }
 
 $color-pink: #e6007e;
@@ -42,4 +44,8 @@ $index-color: #ffffff;
 
 .no-pl {
 	padding-left: 0 !important;
+}
+
+.rose {
+	color: $color-pink;
 }

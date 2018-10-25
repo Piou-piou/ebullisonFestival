@@ -13,6 +13,7 @@
 
 .index {
 	padding: 50px 0;
+	background-color: rgba(255, 255, 255, 0.5);
 
 	&#localisation {
 		padding-bottom: 0;
@@ -24,17 +25,24 @@
 
 	h3 {
 		font-family: Lachata;
+		font-size: 1.5rem;
 	}
 	
 	h1 {
 		/*font-weight: bold;*/
 		color: $color-pink;
 		font-family: rabbit;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
+		letter-spacing: 7px;
+		font-size: 2.2rem;
 
 		img {
 			margin-right: 10px;
 		}
+	}
+	
+	&#a-propos h1 {
+		font-family: lachata;
 	}
 	
 	h4 {
@@ -46,6 +54,12 @@
 	@media screen and (max-width: 640px) {
 		h4:first-of-type {
 			margin-top: inherit;
+		}
+	}
+	
+	@media screen and (max-width: 960px) {
+		.small-block {
+			display: block;
 		}
 	}
 	
