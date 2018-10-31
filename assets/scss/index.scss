@@ -33,7 +33,7 @@
 		color: $color-pink;
 		font-family: rabbit;
 		/*text-transform: uppercase;*/
-		letter-spacing: 7px;
+		letter-spacing: 3px;
 		font-size: 2.2rem;
 
 		img {
@@ -63,7 +63,15 @@
 		}
 	}
 	
+	iframe {
+		display: block;
+	}
+	
 	&.intro {
+		h3 span {
+			font-size: 2.5rem;
+		}
+		
 		p {
 			text-align: center;
 		}
