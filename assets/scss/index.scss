@@ -55,6 +55,10 @@
 		h4:first-of-type {
 			margin-top: inherit;
 		}
+
+		&.intro h3 .rose {
+			line-height: 1;
+		}
 	}
 	
 	@media screen and (max-width: 960px) {
