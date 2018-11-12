@@ -1,5 +1,5 @@
 header {
-	background-color: $header-background;
+	//background-color: $header-background;
 	width: 100%;
 	min-height: 100px;
 	font-family: rabbit;
@@ -16,7 +16,7 @@ header {
 		nav {
 			position: fixed;
 			z-index: 999;
-			background-color: $header-background;
+			//background-color: $header-background;
 			width: 100%;
 		}
 	}

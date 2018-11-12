@@ -25,19 +25,20 @@ html, body {
 
 body {
 	font-family: lachata;
-	background: url("images/fond.png") no-repeat center top;
+	background: url("images/fond_rose.png") no-repeat center top;
 	background-attachment: fixed;
 }
 
-$color-pink: #e6007e;
+$color-pink: #fff;
 $color-orange: #e94f0e;
 
 
-$header-background: #ffffff;
+$header-background: #ff0081;
 $header-color: $color-pink;
-$header-facebook-color: #000000;
+$header-facebook-color: #fff;
 
 $index-color: #ffffff;
+$index-color-text: #ffffff;
 
 @import "header";
 @import "index";
