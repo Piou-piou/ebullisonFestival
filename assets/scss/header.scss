@@ -1,5 +1,7 @@
 header {
 	//background-color: $header-background;
+	background: url("images/fond_rose.png") no-repeat center top;
+	background-attachment: fixed;
 	width: 100%;
 	min-height: 100px;
 	font-family: rabbit;
@@ -17,6 +19,8 @@ header {
 			position: fixed;
 			z-index: 999;
 			//background-color: $header-background;
+			background: url("images/fond_rose.png") no-repeat center top;
+			background-attachment: fixed;
 			width: 100%;
 		}
 	}
