@@ -39,8 +39,14 @@ header {
 			li {
 				display: inline-block;
 				list-style: none;
-				min-width: 30%;
+				/*min-width: 20%;*/
+				padding-left: 5%;
+				padding-right: 5%;
 				letter-spacing: 3px;
+
+				&:first-of-type {
+					padding-left: 8%;
+				}
 
 				img {
 					margin-right: 10px;
@@ -63,6 +69,8 @@ header {
 				li {
 					display: block;
 					width: 100%;
+					padding-left: 5% !important;
+					padding-right: 0 !important;
 				}
 			}
 		}
