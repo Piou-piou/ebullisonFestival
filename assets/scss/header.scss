@@ -31,6 +31,7 @@ header {
 		ul {
 			line-height: 70px;
 			font-size: 25px;
+			margin-left: -2.25rem;
 			padding-left: 0;
 			margin-bottom: 0;
 
@@ -58,6 +59,7 @@ header {
 		@media screen and (max-width: 640px) {
 			ul {
 				padding-left: 20%;
+				margin-left: -0.5rem;
 
 				li {
 					display: block;

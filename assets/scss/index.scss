@@ -3,7 +3,7 @@
 	min-height: 60%;
 	width: 100%;
 	overflow: hidden;
-	
+
 	iframe {
 		width: 100%;
 		height: 100%;
@@ -14,7 +14,7 @@
 .index {
 	padding: 50px 0;
 	color: $index-color-text;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(62, 22, 92, 0.5);
 
 	h1, h3 {
 		text-align: center;
@@ -66,13 +66,12 @@
 			text-align: center;
 		}
 	}
-	
+
 	&#a-propos h1 {
 		font-family: lachata;
 	}
-	
 
-	
+
 	@media screen and (max-width: 640px) {
 		h4:first-of-type {
 			margin-top: inherit;
@@ -82,7 +81,7 @@
 			line-height: 1;
 		}
 	}
-	
+
 	@media screen and (max-width: 960px) {
 		.small-block {
 			display: block;
@@ -90,9 +89,8 @@
 	}
 
 	&#programmation {
-		text-transform: uppercase;
-
 		.liste > div {
+			text-transform: uppercase;
 			text-align: center;
 			line-height: 1.2;
 			width: 90%;
@@ -105,73 +103,83 @@
 		}
 
 		.first-line {
-			font-size: 8.6rem;
+			font-size: 6rem;
 		}
 
 		.second-line {
-			font-size: 5rem;
+			font-size: 4rem;
 		}
 
 		.little-line {
-			font-size: 3rem;
+			font-size: 2rem;
 			text-transform: initial;
+
+			&.space {
+				margin-top: 5px;
+			}
 		}
 
 		@media screen and (max-width: 1870px) {
-			.first-line {
-				font-size: 8rem;
-			}
-		}
-
-		@media screen and (max-width: 1787px) {
-			.second-line {
-				font-size: 4rem;
-			}
-		}
-
-		@media screen and (max-width: 1741px) {
-			.first-line {
-				font-size: 7rem;
-			}
-		}
-
-		@media screen and (max-width: 1725px) {
-			.first-line {
-				font-size: 6rem;
-			}
-		}
-
-		@media screen and (max-width: 1432px) {
-			.second-line {
-				font-size: 3rem;
-			}
-
-			.little-line {
-				font-size: 2rem;
-			}
-		}
-
-		@media screen and (max-width: 1310px) {
 			.first-line {
 				font-size: 5rem;
 			}
 		}
 
-		@media screen and (max-width: 1094px) {
+		@media screen and (max-width: 1787px) {
+			.second-line {
+				font-size: 3rem;
+			}
+		}
+
+		@media screen and (max-width: 827px) {
+			.liste > div {
+				line-height: 1.7;
+
+				> div {
+					display: block;
+
+					span {
+						display: none
+					}
+				}
+			}
+
 			.first-line {
 				font-size: 4rem;
 			}
-		}
 
-		@media screen and (max-width: 879px) {
-			.first-line {
-				font-size: 3rem;
+			.second-line {
+				font-size: 2.5rem;
+			}
+
+			.little-line {
+				font-size: 2.5rem;
+				text-transform: initial;
+
+				&.space {
+					margin-top: inherit;
+				}
 			}
 		}
 
-		@media screen and (max-width: 663px) {
+		@media screen and (max-width: 664px) {
 			.first-line {
-				font-size: 3rem;
+				font-size: 3.5rem;
+			}
+		}
+
+		@media screen and (max-width: 583px) {
+			.first-line {
+				font-size: 2.3rem;
+			}
+
+			.second-line {
+				font-size: 1.5rem;
+			}
+
+			.little-line {
+				font-size: 1.5rem;
+				text-transform: initial;
 			}
 		}
 	}

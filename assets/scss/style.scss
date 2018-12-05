@@ -42,6 +42,21 @@ $index-color-text: #ffffff;
 @import "header";
 @import "index";
 
+a.anchor {
+	display: block;
+	position: relative;
+	top: -140px;
+	visibility: hidden;
+}
+
+@media screen and (max-width: 640px) {
+	a.anchor {
+		top: -20px;
+	}
+}
+
+
+
 .no-pl {
 	padding-left: 0 !important;
 }
@@ -49,7 +64,6 @@ $index-color-text: #ffffff;
 .block {
 	display: block;
 }
-
 
 .rose {
 	color: $color-pink;
