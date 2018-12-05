@@ -14,21 +14,12 @@
 .index {
 	padding: 50px 0;
 	color: $index-color-text;
-	//background-color: rgba(255, 255, 255, 0.8);
-
-	&#localisation {
-		padding-bottom: 0;
-	}
+	background-color: rgba(0, 0, 0, 0.5);
 
 	h1, h3 {
 		text-align: center;
 	}
 
-	h3 {
-		font-family: Lachata;
-		font-size: 1.5rem;
-	}
-	
 	h1 {
 		/*font-weight: bold;*/
 		color: $color-pink;
@@ -41,11 +32,12 @@
 			margin-right: 10px;
 		}
 	}
-	
-	&#a-propos h1 {
-		font-family: lachata;
+
+	h3 {
+		font-family: Lachata;
+		font-size: 1.5rem;
 	}
-	
+
 	h4 {
 		font-family: Lachata;
 		margin: 20px 0;
@@ -56,6 +48,30 @@
 			font-weight: normal;
 		}
 	}
+
+	iframe {
+		display: block;
+	}
+
+	&.intro {
+		h3 span {
+			font-size: 2.5rem;
+
+			.nb {
+				font-size: 3.5rem;
+			}
+		}
+
+		p {
+			text-align: center;
+		}
+	}
+	
+	&#a-propos h1 {
+		font-family: lachata;
+	}
+	
+
 	
 	@media screen and (max-width: 640px) {
 		h4:first-of-type {
@@ -72,22 +88,99 @@
 			display: block;
 		}
 	}
-	
-	iframe {
-		display: block;
-	}
-	
-	&.intro {
-		h3 span {
-			font-size: 2.5rem;
 
-			.nb {
-				font-size: 3.5rem;
+	&#programmation {
+		text-transform: uppercase;
+
+		.liste > div {
+			text-align: center;
+			line-height: 1.2;
+			width: 90%;
+			margin: auto;
+
+			> div {
+				position: relative;
+				display: inline-block;
 			}
 		}
-		
-		p {
-			text-align: center;
+
+		.first-line {
+			font-size: 8.6rem;
 		}
+
+		.second-line {
+			font-size: 5rem;
+		}
+
+		.little-line {
+			font-size: 3rem;
+			text-transform: initial;
+		}
+
+		@media screen and (max-width: 1870px) {
+			.first-line {
+				font-size: 8rem;
+			}
+		}
+
+		@media screen and (max-width: 1787px) {
+			.second-line {
+				font-size: 4rem;
+			}
+		}
+
+		@media screen and (max-width: 1741px) {
+			.first-line {
+				font-size: 7rem;
+			}
+		}
+
+		@media screen and (max-width: 1725px) {
+			.first-line {
+				font-size: 6rem;
+			}
+		}
+
+		@media screen and (max-width: 1432px) {
+			.second-line {
+				font-size: 3rem;
+			}
+
+			.little-line {
+				font-size: 2rem;
+			}
+		}
+
+		@media screen and (max-width: 1310px) {
+			.first-line {
+				font-size: 5rem;
+			}
+		}
+
+		@media screen and (max-width: 1094px) {
+			.first-line {
+				font-size: 4rem;
+			}
+		}
+
+		@media screen and (max-width: 879px) {
+			.first-line {
+				font-size: 3rem;
+			}
+		}
+
+		@media screen and (max-width: 663px) {
+			.first-line {
+				font-size: 3rem;
+			}
+		}
+	}
+
+	&#billetterie {
+		padding-bottom: 0;
+	}
+
+	&#localisation {
+		padding-bottom: 0;
 	}
 }

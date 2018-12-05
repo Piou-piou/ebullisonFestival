@@ -31,20 +31,15 @@ header {
 		ul {
 			line-height: 70px;
 			font-size: 25px;
-			padding-left: 10%;
+			padding-left: 0;
 			margin-bottom: 0;
 
 			li {
 				display: inline-block;
 				list-style: none;
-				/*min-width: 20%;*/
-				padding-left: 5%;
-				padding-right: 5%;
+				padding-left: 3%;
+				padding-right: 3%;
 				letter-spacing: 3px;
-
-				&:first-of-type {
-					padding-left: 8%;
-				}
 
 				img {
 					margin-right: 10px;
@@ -67,7 +62,7 @@ header {
 				li {
 					display: block;
 					width: 100%;
-					padding-left: 5% !important;
+					padding-left: 4% !important;
 					padding-right: 0 !important;
 				}
 			}
