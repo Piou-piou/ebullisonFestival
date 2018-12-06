@@ -16,11 +16,11 @@
 	color: $index-color-text;
 	background-color: rgba(62, 22, 92, 0.5);
 
-	h1, h3 {
+	h1, h2, h3 {
 		text-align: center;
 	}
 
-	h1 {
+	h1, h2 {
 		/*font-weight: bold;*/
 		color: $color-pink;
 		font-family: rabbit;
@@ -68,7 +68,7 @@
 	}
 
 	&#a-propos h1 {
-		font-family: lachata;
+		font-family: rabbit;
 	}
 
 
