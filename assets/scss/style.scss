@@ -30,6 +30,8 @@ body {
 
 $color-pink: #fff;
 $color-orange: #e94f0e;
+$color-rose: #ff0081;
+$color-rose-fonce: #a50054;
 
 
 $header-background: #ff0081;
@@ -39,6 +41,7 @@ $header-facebook-color: #fff;
 $index-color: #ffffff;
 $index-color-text: #ffffff;
 
+@import "mixnxs";
 @import "header";
 @import "index";
 

@@ -187,6 +187,23 @@
 	&#billetterie {
 		padding-bottom: 0;
 	}
+	
+	&#benevole {
+		p {
+			font-size: 1.5rem;
+		}
+		
+		a {
+			display: block;
+			margin: auto;
+			width: 235px;
+			padding: 12px;
+			color: #fff;
+			background: $color-rose;
+			
+			@include hbgtranslate($color-rose, $color-rose-fonce, top, bottom);
+		}
+	}
 
 	&#localisation {
 		padding-bottom: 0;
