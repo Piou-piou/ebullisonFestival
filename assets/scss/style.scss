@@ -28,14 +28,14 @@ body {
 	background: url("images/fond.jpg") fixed center top;
 }
 
-$color-pink: #fff;
+$color-white: #fff;
 $color-orange: #e94f0e;
-$color-rose: #ff0081;
-$color-rose-fonce: #a50054;
+$color-pink: #ff0081;
+$color-pink-dark: #a50054;
 
 
 $header-background: #ff0081;
-$header-color: $color-pink;
+$header-color: $color-white;
 $header-facebook-color: #fff;
 
 $index-color: #ffffff;
@@ -69,7 +69,7 @@ a.anchor {
 }
 
 .rose {
-	color: $color-pink;
+	color: $color-white;
 }
 .tac {
 	text-align: center;

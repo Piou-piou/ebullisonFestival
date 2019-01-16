@@ -23,7 +23,7 @@
 
 	h1, h2 {
 		/*font-weight: bold;*/
-		color: $color-pink;
+		color: $color-white;
 		font-family: rabbit;
 		/*text-transform: uppercase;*/
 		letter-spacing: 3px;
@@ -90,25 +90,35 @@
 	}
 
 	&#programmation {
-		.liste > div {
-			text-transform: uppercase;
-			text-align: center;
-			line-height: 1.2;
-			width: 90%;
-			margin: auto;
-
-			> div {
-				position: relative;
-				display: inline-block;
-			}
+		.vendredi, .samedi {
+			margin-top: 2rem;
+			color: $color-orange;
 		}
 
 		.first-line {
 			font-size: 6rem;
+			text-transform: uppercase;
+			line-height: 1.2;
 		}
 
 		.second-line {
 			font-size: 4rem;
+			text-transform: uppercase;
+			line-height: 1.2;
+
+			> div {
+				display: inline-block;
+			}
+		}
+
+		.second-line-1 {
+			font-size: 3.5rem;
+			text-transform: uppercase;
+			line-height: 1.2;
+
+			> div {
+				display: inline-block;
+			}
 		}
 
 		.little-line {
@@ -118,11 +128,15 @@
 			&.space {
 				margin-top: 5px;
 			}
+
+			> div {
+				display: inline-block;
+			}
 		}
 
 		@media screen and (max-width: 1870px) {
 			.first-line {
-				font-size: 5rem;
+				font-size: 4.3rem;
 			}
 		}
 
@@ -130,31 +144,37 @@
 			.second-line {
 				font-size: 3rem;
 			}
+
+			.second-line-1 {
+				font-size: 2.5rem;
+			}
 		}
 
-		@media screen and (max-width: 827px) {
-			.liste > div {
-				line-height: 1.7;
-
-				> div {
-					display: block;
-
-					span {
-						display: none
-					}
-				}
-			}
-
+		@media screen and (max-width: 1390px) {
 			.first-line {
 				font-size: 4rem;
 			}
+		}
 
-			.second-line {
+		@media screen and (max-width: 950px) {
+			/*.liste > div > div span {
+				display: none
+			}*/
+
+			.first-line {
 				font-size: 2.5rem;
 			}
 
+			.second-line {
+				font-size: 2rem;
+			}
+
+			.second-line-1 {
+				font-size: 1.8rem;
+			}
+
 			.little-line {
-				font-size: 2.5rem;
+				font-size: 1.5rem;
 				text-transform: initial;
 
 				&.space {
@@ -163,23 +183,44 @@
 			}
 		}
 
-		@media screen and (max-width: 664px) {
+		@media screen and (max-width: 865px) {
 			.first-line {
-				font-size: 3.5rem;
+				font-size: 2.4rem;
+			}
+
+			.second-line {
+				font-size: 2rem;
+			}
+
+			.second-line-1 {
+				font-size: 1.8rem;
+			}
+
+			.little-line {
+				font-size: 1.5rem;
+				text-transform: initial;
+
+				&.space {
+					margin-top: inherit;
+				}
 			}
 		}
 
 		@media screen and (max-width: 583px) {
 			.first-line {
-				font-size: 2.3rem;
+				font-size: 3.2rem;
 			}
 
 			.second-line {
-				font-size: 1.5rem;
+				font-size: 2.5rem;
+			}
+
+			.second-line-1 {
+				font-size: 2rem;
 			}
 
 			.little-line {
-				font-size: 1.5rem;
+				font-size: 1.8rem;
 				text-transform: initial;
 			}
 		}
@@ -200,9 +241,9 @@
 			width: 235px;
 			padding: 12px;
 			color: #fff;
-			background: $color-rose;
+			background: $color-pink;
 			
-			@include hbgtranslate($color-rose, $color-rose-fonce, top, bottom);
+			@include hbgtranslate($color-pink, $color-pink-dark, top, bottom);
 		}
 	}
 
