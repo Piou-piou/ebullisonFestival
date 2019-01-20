@@ -229,6 +229,43 @@
 	&#billetterie {
 		padding-bottom: 0;
 	}
+
+	&#mecenat {
+		margin: 0 20px;
+
+		@media screen and (min-width: 980px) {
+			table {
+				display: table;
+			}
+		}
+
+		table {
+			background: transparent !important;
+			color: #ffffff;
+
+			thead, tbody {
+				background: transparent !important;
+				color: #ffffff;
+			}
+
+			 tbody tr {
+				transition: 0.3s all ease;
+
+				&:nth-child(even) {
+					background-color: transparent;
+				}
+
+				&:hover {
+					background: rgba(0, 0, 0, 0.8) !important;
+				}
+			}
+
+			td {
+				text-align: center;
+				border: 1px solid #ffffff !important;
+			}
+		}
+	}
 	
 	&#benevole {
 		p {
