@@ -213,6 +213,14 @@
 		}
 
 		@media screen and (max-width: 583px) {
+			> div > div > div > div > div {
+				display: block !important;
+				
+				span {
+					display: none;
+				}
+			}
+			
 			.first-line {
 				font-size: 3.2rem;
 			}
@@ -294,9 +302,10 @@
 		padding-bottom: 0;
 	}
 	
-	&#medias {
+	&#localisation, &#medias {
 		a {
 			color: $color-white;
+			text-decoration: underline;
 		}
 	}
 }
