@@ -291,7 +291,7 @@
 			margin: auto;
 			width: 235px;
 			padding: 12px;
-			color: #fff;
+			color: $color-white;
 			background: $color-pink;
 			
 			@include hbgtranslate($color-pink, $color-pink-dark, top, bottom);
@@ -308,4 +308,10 @@
 			text-decoration: underline;
 		}
 	}
+	
+	/*&#infos-pratiques {
+		.block {
+			border: 1px solid $color-white;
+		}
+	}*/
 }
