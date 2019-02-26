@@ -238,6 +238,17 @@
 				text-transform: initial;
 			}
 		}
+
+		a {
+			display: block;
+			margin: auto;
+			width: 400px;
+			padding: 12px;
+			color: $color-white;
+			background: $color-pink;
+
+			@include hbgtranslate($color-pink, $color-pink-dark, top, bottom);
+		}
 	}
 
 	&#billetterie {
